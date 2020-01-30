@@ -17,7 +17,9 @@ class Application
         print "> "
         choice = gets.chomp
         if choice == "Oui"
-          g.new_round
+          turn_count = 0
+          redo
+          g = Game.new
         elsif choice == "Non"
           abort("Merci d\'avoir joue !".green) 
         end
