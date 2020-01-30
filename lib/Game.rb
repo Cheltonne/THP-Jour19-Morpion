@@ -1,7 +1,7 @@
 require_relative 'Player.rb'
 require_relative 'Board.rb'
 require_relative 'BoardCase.rb'
-require_relative 'Show.rb'
+require_relative '../view/Show.rb'
 require 'colorize'
 
 class Game
