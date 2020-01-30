@@ -2,6 +2,7 @@ require_relative 'Player.rb'
 require_relative 'Board.rb'
 require_relative 'BoardCase.rb'
 require_relative 'Show.rb'
+require 'colorize'
 
 class Game
 attr_accessor :current_player, :status, :Board, :player_list, :current_game, :player1, :player2
@@ -9,10 +10,10 @@ attr_accessor :current_player, :status, :Board, :player_list, :current_game, :pl
   def initialize
     puts "Veuillez rentrer le nom du joueur 1"
     print "> "
-    @player1 = Player.new(gets.chomp, 'X')
+    @player1 = Player.new(gets.chomp, 'X'.red)
     puts "Veuillez rentrer le nom du joueur 2"
     print "> "
-    @player2 = Player.new(gets.chomp, 'O')
+    @player2 = Player.new(gets.chomp, 'O'.blue)
     @current_game = Board.new
     @status = "on going"
     coin_flip = rand(1..2)
