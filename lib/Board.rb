@@ -34,7 +34,4 @@ class Board
     #2) change la BoardCase jouée en fonction de la valeur du joueur (X ou O)
   end
 
-  def victory?
-    #TO DO : une méthode qui vérifie le plateau et indique s'il y a un vainqueur ou match nul
-  end
 end #Fin de la classe Board
